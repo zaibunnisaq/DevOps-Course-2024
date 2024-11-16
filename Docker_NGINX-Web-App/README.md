@@ -29,34 +29,27 @@ To build and run this project on your local machine, follow the steps below:
 1. Clone this repository to your local machine:
 
    ```bash
-   git clone <repository-url>
-   cd <repository-directory>
+   git clone <[repository-url](https://github.com/zaibunnisaq/DevOps-Course-2024/Docker_NGINX-Web-App)>
+   cd <[repository-directory](https://github.com/zaibunnisaq/DevOps-Course-2024)>
    
 2. Build the Docker Image:
 
-    bash
-Copy code
-docker build -t <your-docker-username>/my-webpage:latest .
-Run the Docker container:
+   ```bash
+   docker build -t <your-docker-username>/my-webpage:latest .
+   
+3. Run the Docker container:
 
-bash
-Copy code
-docker run -d -p 8080:80 <your-docker-username>/my-webpage:latest
-Access the webpage in your browser:
+   ```bash
+   docker run -d -p 8080:80 <your-docker-username>/my-webpage:latest
+4. Access the webpage in your browser:
 
-bash
-Copy code
-http://localhost:8080
-Docker Hub Deployment 📦
+   ```bash
+   http://localhost:8080
+## Docker Hub Deployment 📦
 If you want to push this image to Docker Hub, follow the steps below:
 
-Tag your image:
-bash
-Copy code
+Tag and Push your image to Docker Hub:
+```bash
 docker tag <your-docker-username>/my-webpage:latest <your-docker-username>/my-webpage:v1
-Push the image to Docker Hub:
-bash
-Copy code
 docker push <your-docker-username>/my-webpage:v1
-License 📜
-This project is licensed under the MIT License - see the LICENSE file for details.
+
